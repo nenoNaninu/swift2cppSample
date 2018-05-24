@@ -12,6 +12,10 @@
 		BEB01E1520B6B7E3005F8E5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEB01E1320B6B7E3005F8E5F /* Main.storyboard */; };
 		BEB01E1720B6B7E4005F8E5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEB01E1620B6B7E4005F8E5F /* Assets.xcassets */; };
 		BEB01E1A20B6B7E4005F8E5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEB01E1820B6B7E4005F8E5F /* LaunchScreen.storyboard */; };
+		BEB01E2220B6BAFC005F8E5F /* SimpleAVFondation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB01E2120B6BAFC005F8E5F /* SimpleAVFondation.swift */; };
+		BEB01E2420B6BC4F005F8E5F /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB01E2320B6BC4F005F8E5F /* opencv2.framework */; };
+		BEB01E2820B6BCD6005F8E5F /* opencvWarapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = BEB01E2720B6BCD6005F8E5F /* opencvWarapper.mm */; };
+		BEB01E2A20B6C1E3005F8E5F /* manamusume.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BEB01E2920B6C1E2005F8E5F /* manamusume.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,12 @@
 		BEB01E1620B6B7E4005F8E5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BEB01E1920B6B7E4005F8E5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BEB01E1B20B6B7E4005F8E5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEB01E2120B6BAFC005F8E5F /* SimpleAVFondation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAVFondation.swift; sourceTree = "<group>"; };
+		BEB01E2320B6BC4F005F8E5F /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		BEB01E2520B6BCD6005F8E5F /* swiftOpenCvSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "swiftOpenCvSample-Bridging-Header.h"; sourceTree = "<group>"; };
+		BEB01E2620B6BCD6005F8E5F /* opencvWarapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = opencvWarapper.h; sourceTree = "<group>"; };
+		BEB01E2720B6BCD6005F8E5F /* opencvWarapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = opencvWarapper.mm; sourceTree = "<group>"; };
+		BEB01E2920B6C1E2005F8E5F /* manamusume.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = manamusume.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEB01E2420B6BC4F005F8E5F /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +49,7 @@
 		BEB01E0320B6B7E3005F8E5F = {
 			isa = PBXGroup;
 			children = (
+				BEB01E2320B6BC4F005F8E5F /* opencv2.framework */,
 				BEB01E0E20B6B7E3005F8E5F /* swiftOpenCvSample */,
 				BEB01E0D20B6B7E3005F8E5F /* Products */,
 			);
@@ -54,12 +66,17 @@
 		BEB01E0E20B6B7E3005F8E5F /* swiftOpenCvSample */ = {
 			isa = PBXGroup;
 			children = (
+				BEB01E2920B6C1E2005F8E5F /* manamusume.jpg */,
 				BEB01E0F20B6B7E3005F8E5F /* AppDelegate.swift */,
 				BEB01E1120B6B7E3005F8E5F /* ViewController.swift */,
+				BEB01E2620B6BCD6005F8E5F /* opencvWarapper.h */,
+				BEB01E2720B6BCD6005F8E5F /* opencvWarapper.mm */,
 				BEB01E1320B6B7E3005F8E5F /* Main.storyboard */,
 				BEB01E1620B6B7E4005F8E5F /* Assets.xcassets */,
 				BEB01E1820B6B7E4005F8E5F /* LaunchScreen.storyboard */,
 				BEB01E1B20B6B7E4005F8E5F /* Info.plist */,
+				BEB01E2120B6BAFC005F8E5F /* SimpleAVFondation.swift */,
+				BEB01E2520B6BCD6005F8E5F /* swiftOpenCvSample-Bridging-Header.h */,
 			);
 			path = swiftOpenCvSample;
 			sourceTree = "<group>";
@@ -96,6 +113,7 @@
 				TargetAttributes = {
 					BEB01E0B20B6B7E3005F8E5F = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 				};
 			};
@@ -123,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEB01E1A20B6B7E4005F8E5F /* LaunchScreen.storyboard in Resources */,
+				BEB01E2A20B6C1E3005F8E5F /* manamusume.jpg in Resources */,
 				BEB01E1720B6B7E4005F8E5F /* Assets.xcassets in Resources */,
 				BEB01E1520B6B7E3005F8E5F /* Main.storyboard in Resources */,
 			);
@@ -135,7 +154,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEB01E2820B6BCD6005F8E5F /* opencvWarapper.mm in Sources */,
 				BEB01E1220B6B7E3005F8E5F /* ViewController.swift in Sources */,
+				BEB01E2220B6BAFC005F8E5F /* SimpleAVFondation.swift in Sources */,
 				BEB01E1020B6B7E3005F8E5F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,8 +301,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZRAFCU8XR8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = swiftOpenCvSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -289,6 +315,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "nenos-factory.swiftOpenCvSample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swiftOpenCvSample/swiftOpenCvSample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,8 +326,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZRAFCU8XR8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = swiftOpenCvSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -307,6 +340,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "nenos-factory.swiftOpenCvSample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swiftOpenCvSample/swiftOpenCvSample-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
